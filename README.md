@@ -18,4 +18,4 @@ Using simulated data, we showed that the model can recover individual trajectori
 
 ## Code 
 
-The model proposed in the thesis is written in [Julia](https://julialang.org). Code for training the model and for reproduing (most) figures in the thesis is available [here](https://github.com/maren-ha/DeepDynamicModelingWithJust2TimePoints). 
+The model developed in the thesis is written in [Julia](https://julialang.org). Code for training the model and for reproducing (most) figures in the thesis is available [here](https://github.com/maren-ha/DeepDynamicModelingWithJust2TimePoints). 
