@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Packages%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[english]{babel} 
+\usepackage[utf8]{inputenc} 
+\usepackage[top=4cm, bottom=4cm, left=3cm, right=3cm]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{mathrsfs,amssymb} 
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[hyperref,table]{xcolor}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[ruled]{algorithm2e}
+\usepackage{marvosym}
+\usepackage{csquotes}
+\usepackage{wrapfig} 
+
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\numberwithin{equation}{chapter}
+
+\usepackage[hypcap]{caption}
+
+\usepackage{subcaption}
+\usepackage{gensymb}
+\usepackage[many]{tcolorbox}
+
+\usepackage[pageanchor, colorlinks,
+linkcolor=black, citecolor=black,urlcolor=black]{hyperref}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Maths environment%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{plain} 
+\newtheorem{theorem}{Theorem}[]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{cor}[theorem]{Corollary}
+\theoremstyle{definition} 
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}  
+\newtheorem*{rmk}{Remark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%new commands%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\nc}{\newcommand} 
+
+\nc{\relmid}{\mathrel{}\middle|\mathrel{}}
+\nc{\T}{^{\mathrm{T}}}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Var}{Var}
+\renewcommand{\P}{P}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{Q}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\dkl}{ D_{\mathrm{KL}}}
+\newcommand{\elbo}{\mathrm{ELBO}}
+\newcommand{\tn}{^{t_0}}
+\newcommand{\te}{^{t_1}}
+\nc{\ME}{\text{ME}}
+\nc{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+
+\nc{\remark}[1]{
+	\bigskip
+
+	\textcolor{red}{\textbf{#1}}
+
+	\bigskip}
+
+
+\nc{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Misc%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tcbset{fonttitle=\hypersetup{linkcolor=white}}
+
+\newtcolorbox{mybox}[2][]{
+enhanced,
+attach boxed title to top left={xshift=0.5cm,
+        yshift=-2mm},
+colbacktitle=white!15!gray,
+coltitle=white,
+  title=#2,
+  #1
+}
+
+\DeclareRobustCommand{\gobblefive}[5]{}
+\newcommand*{\tocless}{\addtocontents{toc}{\gobblefive}}
+
+\makeatletter%indentation for ToC
+\def\l@section{\@tocline{0}{0pt}{1pc}{5pc}{}}
+\def\l@subsection{\@tocline{1}{0pt}{2pc}{5pc}{}}
+\def\l@subsubsection{\@tocline{1}{0pt}{3pc}{5pc}{}}
+\def\l@figure{\@tocline{1}{0pt}{1em}{2.1em}{}}
+
+\newenvironment{Figure}{% 
+   \par\addvspace{12pt plus2pt}% 
+   \def\@captype{figure}% 
+}{% 
+   \par\addvspace{12pt plus2pt}% 
+}% 

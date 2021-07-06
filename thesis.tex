@@ -1,0 +1,75 @@
+\documentclass[english,12pt,a4paper, reqno,
+draft,
+final,
+ titlepage]{amsbook}
+
+\linespread{1.5}
+
+\usepackage{master}
+
+
+\title[Temporal Dynamics in Generative Models]{Temporal Dynamics in Generative Models.}
+
+\hypersetup{pdftitle={Temporal Dynamics in Generative Models},
+pdfauthor={Maren Hackenberg}}
+\graphicspath{{Figures/}}
+
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyhead[RO, LE]{\thepage}
+\fancyhead[LO, RE]{Temporal Dynamics in Generative Models.}%Title
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headheight}{14pt}
+}
+
+\begin{document}
+
+\frontmatter
+
+%Title
+\input{Chapters/titlepage}
+
+\blankpage
+
+%Acknowledgements
+\setcounter{page}{1}
+
+\pagestyle{plain}
+
+\input{Chapters/acknowledgement}
+
+% Table of contents
+\renewcommand{\baselinestretch}{1.45}\normalsize
+\tableofcontents
+\renewcommand{\baselinestretch}{1.5}\normalsize
+
+% Main text body
+\mainmatter
+\pagestyle{plain}
+
+\input{Chapters/introduction}
+
+\input{Chapters/background}
+
+\input{Chapters/methods}
+
+\input{Chapters/simulationstudy}
+
+\input{Chapters/discussion}
+
+\newpage
+
+% Bibliography
+\renewcommand{\bibname}{References}
+\bibliographystyle{unsrt}
+\bibliography{bibfile}
+
+% Germany summary and statement of authorship
+\input{Chapters/german-summary}
+\input{Chapters/statement}
+
+\backmatter
+\fancyhead[LO, RE]{Temporal Dynamics in Generative Models}
+
+\end{document}
