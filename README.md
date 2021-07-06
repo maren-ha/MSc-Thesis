@@ -15,3 +15,7 @@ Inspired by recent advances that allow to combine deep learning with dynamic mod
 Additionally, we enriched the information of each individual by linking groups of individuals with similar underlying trajectories, which then serve as proxy information on the common temporal dynamics. Irregular spacing in time can thus be used to gain more information on individual dynamics by leveraging individuals’ similarity. 
 
 Using simulated data, we showed that the model can recover individual trajectories from linear and non-linear ODE systems with two and four unknown parameters and infer groups of individuals with similar trajectories. The results illustrate that dynamic deep learning approaches can be adapted to such small data settings to provide an individual-level understanding of the dynamics governing individuals’ developments. 
+
+## Code 
+
+The model proposed in the thesis is written in [Julia](https://julialang.org). Code for training the model and for reproduing (most) figures in the thesis is available [here](https://github.com/maren-ha/DeepDynamicModelingWithJust2TimePoints). 
