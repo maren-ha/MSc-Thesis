@@ -4,7 +4,7 @@ This repo contains the TeX sourcecode, figures, bibliography and the final pdf o
 
 The thesis was submitted in April, 2020 as the final part of my M. Sc. degree in Mathematics at the University of Freiburg, Germany. 
 
-It was [awarded the Bernd Streitberg Award](http://www.biometrische-gesellschaft.de/en/nachwuchs/bernd-streitbergpreis/die-preistraeger.html)  of the German Region of the International Biometric Society (IBR-DR) in March, 2021.
+It was [awarded the Bernd Streitberg Award](http://www.biometrische-gesellschaft.de/en/nachwuchs/bernd-streitbergpreis/die-preistraeger.html)  of the German Region of the International Biometric Society (IBS-DR) in March, 2021.
 
 ## Abstract
 
